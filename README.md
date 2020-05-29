@@ -19,4 +19,5 @@
 
 # 参考：
 - [xjn' Blog 使用OpenCore引导黑苹果](https://blog.xjn819.com/?p=543)
-- [紫氵朝 制作的版本](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1826205)
+- [紫氵朝 联想ThinkCentre M710Q微型主机黑苹果基本完善（2.15修复前置音频输出）](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1826205)
+- [daliansky Lenovo-M710Q-Hackintosh](https://github.com/daliansky/Lenovo-M710Q-Hackintosh)
