@@ -8,6 +8,7 @@
 解锁CFG 后可以变更 Config—–Kernel—–Quirks
 1. AppleXcpmCfgLock true -> false
 2. AppleCpuPmCfgLock true -> false
+3. IgnoreInvalidFlexRatio：如果没有解鎖CFG，必须勾选。
 
 不是使用的DW1820A网卡，可以关闭网卡PCI描述、蓝牙驱动
 
