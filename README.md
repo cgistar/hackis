@@ -12,7 +12,7 @@
 4. 不是使用的DW1820A网卡，可以关闭网卡PCI描述、蓝牙驱动
 
 # RU.efi 解锁BIOS Lock
-通过教程[解锁MSR 0xE2、BIOS Lock等隐藏选项新姿势，还黑果原生体验（附刷AMI BIOS教程）](http://bbs.pcbeta.com/viewthread-1834965-1-1.html)，查询到我的BIOS需要修改0x503
+通过教程[解锁MSR 0xE2、BIOS Lock等隐藏选项新姿势，还黑果原生体验（附刷AMI BIOS教程）](http://bbs.pcbeta.com/viewthread-1834965-1-1.html)，查询到我的BIOS，版本：M1AKT49A，需要修改0x503
 1. 通过EFI菜单进入RU.efi
 2. ALT+C
 3. 选择 UEFI Variable
