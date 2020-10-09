@@ -26,7 +26,12 @@
 
 # 更新日志
 20.10.9
-- 更新 opencore 0.6.0 0.6.1 0.6.2
+- add 0.6.2;
+- add Innie.kext 修复外置硬盘问题;
+- add H_EC to EC patch;
+- add SSDT-PLUG GPRW 尝试修复睡眠秒醒问题;
+- add SSDT-PMC 原生nvram方案;
+- remove USBPower.kext;
 
 20.6.9
 - 更新 opencore 0.5.9
