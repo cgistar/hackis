@@ -1,3 +1,11 @@
+# 我的配置
+| CPU      | i3 8100                     |
+| -------- | --------------------------- |
+| 硬盘     | RC500                       |
+| 内存     | 国产鸟、鱼牌混搭 16G        |
+| 网卡     | DW1820A                     |
+| DP转HDMI | 绿联DP111，合金头 PS176芯片 |
+
 # M710Q opencore 配置
 1. 包含了DW1820A无线网卡及蓝牙的配置；
 2. 使用前，请计算三码，并填写在 PlatformInfo -> Generic -> MLB、 SystemSerialNumber、 SystemUUID；
@@ -26,11 +34,11 @@
 
 # 更新日志
 20.10.9
-- add 0.6.2;
-- add Innie.kext 修复外置硬盘问题;
+- Opencore 0.6.2;
 - add H_EC to EC patch;
 - add SSDT-PLUG GPRW 尝试修复睡眠秒醒问题;
 - add SSDT-PMC 原生nvram方案;
+- add Innie.kext 修复外置硬盘问题;
 - remove USBPower.kext;
 
 20.6.9
