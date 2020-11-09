@@ -24,7 +24,7 @@
 3. IgnoreInvalidFlexRatio：如果没有解鎖 CFG，必须勾选。
 4. 不是使用的 DW1820A 网卡，可以关闭网卡 PCI 描述、蓝牙驱动
 
-# RU.efi 解锁 BIOS Lock
+# RU.efi 解锁 CFG Lock
 
 通过教程[解锁 MSR 0xE2、BIOS Lock 等隐藏选项新姿势，还黑果原生体验（附刷 AMI BIOS 教程）](http://bbs.pcbeta.com/viewthread-1834965-1-1.html)，查询到我的 BIOS，版本：M1AKT49A，需要修改 0x503
 
@@ -34,6 +34,12 @@
 4. 按 PAGE UP 和 PAGE DOWN 进行翻页，找到 Setup 项，可能会看到两个 Setup 项，分别按回车进去看下，选择数据较多的一个 Setup。在数据视图中按 CTRL+PAGE UP 和 CTRL+PAGE DOWN 进行翻页；
 5. 需修改 0x503 的值为 0，首先找到 0x500 再用左右方向键定位纵向 03 的数值，按回车键进入修改模式，直接输入数字 0，再按 CTRL+W 保存修改，你会看到"Updated OK: Setup"的信息，此时 BIOS Lock 的值就被写入了 BIOS 中。
 
+感谢 @tanpengsccd 提供的简单方法:
+- 进入菜单 按 space 显示所有选择项目
+- 进入RU.efi
+- 输入 setup_var 0x503 0x0
+- 然后提示设置成功
+- 再检查CFG Lock 已经解锁了
 # BIOS 设置
 
 1. 显卡缓存 256M
