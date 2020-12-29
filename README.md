@@ -14,15 +14,23 @@
 2. 使用前，请计算三码，并填写在 PlatformInfo -> Generic -> MLB、 SystemSerialNumber、 SystemUUID；
 3. 如果有连接 dp 转 hdmi 紫屏的，可以参考[使用 Hackintool 修复黑苹果 Intel 核显驱动外部显示器紫屏问题](https://blog.skk.moe/post/hackintosh-fix-magenta-screen/),修补 EDID，或制作缓冲帧补丁方式解决；
 4. 尽量使用好一点的 DP 转 hdmi 线，要主动式的，升级到 10.15.5 后，避免黑屏问题；
+5. 查询问题，加启动参数: NVRAM → add → 7C436110-AB2A-4BBB-A880-FE41995C9F82 → boot-args → -v keepsyms=1
+
+# 升级到 0.6.4 时，如果你使用了 Bootstrap，请注意先执行以下操作：
+- 先关闭 BootProtect，config.plist → Misc → Security → BootProtect: 设置为 None
+- 确保你开启了 RequestBootVarRouting，config.plist → UEFI → Quirks: RequestBootVarRouting 设置为 Enabled
+- 开启重置 NVRAM 功能，config.plist → Misc → Security: AllowNvramReset 设置为 Enabled
+- 升级 0.6.4 替换文件后，重启计算机，选择 Reset NVRAM
+- 重新进入系统后，可重新开启 BootProtect，对于较老的主板（Haswell 或更老），建议使用 BootstrapShort，较新的主板可继续使用 Bootstrap
 
 # 使用说明
-
 解锁 CFG 后可以变更 Config—–Kernel—–Quirks
 
 1. AppleXcpmCfgLock true -> false
 2. AppleCpuPmCfgLock true -> false
 3. IgnoreInvalidFlexRatio：如果没有解鎖 CFG，必须勾选。
 4. 不是使用的 DW1820A 网卡，可以关闭网卡 PCI 描述、蓝牙驱动
+5. 注入国家代码，解决连接速率低或者国家代码是US: brcmfx-country=#a
 
 # RU.efi 解锁 CFG Lock
 
